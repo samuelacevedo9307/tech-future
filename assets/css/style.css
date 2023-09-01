@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&amp;display=swap");
+:root {
+  --body-color: #2c2d2a;
+  --savanna-bg: #e9bf8b;
+  --beach-bg: #e7dfcf;
+  --glacier-bg: #b6d6c8;
+  --coral-bg: #e86357;
+  --arrow-fill: #333231;
+  --body-font: sans-serif;
+  --italic-font: serif;
+  --height: calc(80vh - 50px);
+  --width: 850px;
+}
+* {
+  box-sizing: border-box;
+  outline: none;   
+
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: var(--body-color);
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+body {
+  font-family: var(--body-font);
+  color: var(--body-color);
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+
+}
+
+.logo {
+  width: 116px;
+}
+/*-------------------------------------header Nav---------------------------------------*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  width: 100%;
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-weight:300;
+  font-size: 15px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #fff;
+  z-index: 6;
+  font-family: 'Poppins', sans-serif;
+}
+.header a {
+  color: black !important;
+  display: flex;
+}
+.header span {
+  color: #f2921d !important;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  margin-right: 20px;
+}
+.header h1 {
+  font-weight:500 !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  color: black !important;
+  width: 130px;
+}
+
+.header h1 {
+  font-size: 50px !important;
+  font-family: "poppins";
+  font-weight: 300;
+}
+
+.botonContacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(242,134,04);
+  border-color: 1px solid rgb(242,134,04);
+  margin: 0px 20px;
+  width: 120px;
+  height: 40px;
+  background-color: rgb(242,134,04) !important;
+  background: white;
+  color: white ;
+  padding: 10px 0px;
+  border-radius: 12px;
+}
+/*-------------------
+Seccion slide
+-----------------------*/
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*-------------------
+seccion login
+-----------------------*/
+.login-container button , .registro button{
+  border: 1px solid rgb(242,134,04);
+  border-color: 1px solid rgb(242,134,04);
+  margin:20px;
+  width: 130px;
+  height: 30px;
+  background-color: rgb(242,134,04) !important;
+  background: white;
+  color: white ;
+  padding: 10px 0px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-container a {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.login-container h2 {
+  display: flex;
+  justify-content: center;
+}
+.login-container input , .registro input {
+  margin: 30px 10px;
+  border-bottom: 1px solid rgb(242,134,04);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+/*-------------------
+Registro 
+-----------------------*/
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------
+media queri
+----------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Estilos generales para dispositivos móviles */
+
+@media (min-width: 340px) and (max-width: 820px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .slide button {
+    margin: 20px 0px;
+  }
+  .slide {
+    margin: 100px 0px;
+  }
+  .login-container{
+    margin-top: 150px;
+  }
+  .registro {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+  .registro button {
+    margin: 50px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+  }
+  .form-group input {
+    margin: 0px;
+  }
+  #inputState {
+    width: 55px;
+    height: 30px;
+    padding: 0px;
+    border-bottom: 1px #f2921d solid ;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+  .cel{
+    display: flex;
+    height: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .cel label {
+    margin: 0px !important;
+  }
+  }
