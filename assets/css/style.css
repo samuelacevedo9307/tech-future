@@ -76,6 +76,7 @@ body {
   font-size: 30px;
   color: black !important;
   width: 130px;
+  
 }
 
 .header h1 {
@@ -90,7 +91,6 @@ body {
   justify-content: center;
   border: 1px solid rgb(242,134,04);
   border-color: 1px solid rgb(242,134,04);
-  margin: 0px 20px;
   width: 120px;
   height: 40px;
   background-color: rgb(242,134,04) !important;
@@ -158,7 +158,21 @@ media queri
 @media (min-width: 340px) and (max-width: 820px) {
   .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-left: 10px;
+  }
+  .header a {
+    display: flex;
+    justify-content: center;
+  }
+  .header img {
+    width: 50px;
+    margin:20px
+  }
+  .botonContacto {
+    margin-left: 100px;
   }
   .slide button {
     margin: 20px 0px;
@@ -168,14 +182,34 @@ media queri
   }
   .login-container{
     margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .login form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .registro {
     margin-top: 150px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .registro button {
-    margin: 50px;
+    margin: 0px !important;
+    margin-top: 30px;
+    width: 100%;
+  }
+  .form-group , .form-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
   .form-group {
     display: flex;
@@ -194,15 +228,83 @@ media queri
     border-right: none;
     border-left: none;
   }
+  .cel input {
+    width: 70%;
+  }
   .cel{
     display: flex;
     height: 50px;
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
-    margin-top: 20px;
+    justify-content: flex-start;
+    margin-top: 0px;
   }
   .cel label {
     margin: 0px !important;
   }
+  .cel select {
+    border-bottom: none !important;
   }
+  .admin {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .admin button {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(242,134,04);
+    border-color: 1px solid rgb(242,134,04);
+    margin:20px;
+    width: 130px;
+    height: 30px;
+    background-color: rgb(242,134,04) !important;
+    background: white;
+    color: white ;
+    padding: 10px 0px;
+    border-radius: 8px;
+  }
+  .admin form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .admin form input {
+    width: 150px;
+    height: 30px;
+    padding: 0px;
+    border-bottom: 1px #f2921d solid ;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+  .nft {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+  }
+  .nft img {
+    width: 450px !important;
+    padding: 25px;
+  }
+  .nft button {
+    margin: 20px 0px;
+  }
+  .nft {
+    margin: 100px 0px;
+  }
+  .nft h1{
+    width: 100%;
+    text-align: center;
+  }
+
+}

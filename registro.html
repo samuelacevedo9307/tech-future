@@ -9,15 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Kumbh Sans" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
       <nav class="header">
+        <a href="index.html">
+          <img src="assets/img/flecha.png"></img>
+         </a>
         <a href="#">
         <h1>Block<span>fy</span></h1>
           </a>
@@ -55,21 +55,24 @@
             <label for="inputCargo">Cargo</label>
             <input type="text" class="form-control" id="inputCargo" placeholder="*">
           </div>
+          <div class="form-group">
+            <label for="DNI">Wallet</label>
+            <input type="text" class="form-control" id="wallet" placeholder="*">
+          </div>
           <div class="form-group col-md-2">
+            <label for="inputZip">Celular</label>
             <div class="cel">
-                <select id="inputState" class="form-control" >
-                  <option selected>+</option>
-                  <option>+52</option>
-                  <option>+54</option>
-                </select>
-                <label for="inputZip">Celular</label>
-                <input type="text" class="form-control" id="inputZip" placeholder="*">
+              <select id="inputState" class="form-control" >
+                <option selected>+</option>
+                <option>+52</option>
+                <option>+54</option>
+              </select>
+              <input type="text" class="form-control" id="inputZip" placeholder="*">
             </div>
+            <br></br>
           </div>
         </div>
-        <div class="form-group">
-          
-        </div>
+        
         <button type="submit" class="btn btn-primary">Sign in</button>
       </form>
 
@@ -80,7 +83,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     <script src="assets/js/main.js"></script>
-    
     
   </body>
   
